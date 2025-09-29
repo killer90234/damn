@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sinusync</title>
+    <meta name="description" content="Visual portfolio showcasing experimental VFX and real-time visual storytelling work by Sinusync.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <header class="header" role="banner">
+        <div class="header-container">
+            <div class="logo">
+                <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sinusync Logo">
+                    <title>Sinusync</title>
+                    <path d="M8 4C8 2.89543 8.89543 2 10 2H14C15.1046 2 16 2.89543 16 4V28C16 29.1046 15.1046 30 14 30H10C8.89543 30 8 29.1046 8 28V4Z" fill="white"/>
+                    <path d="M20 8C20 6.89543 20.8954 6 22 6H26C27.1046 6 28 6.89543 28 8V24C28 25.1046 27.1046 26 26 26H22C20.8954 26 20 25.1046 20 24V8Z" fill="white"/>
+                    <text x="36" y="20" font-family="Georgia, serif" font-size="16" fill="white">Sinusync</text>
+                </svg>
+            </div>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="links.html" class="nav-link">Links</a></li>
+                    <li><a href="portfolio.html" class="nav-link active" aria-current="page">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="main" role="main">
+        <section class="portfolio-section" aria-labelledby="portfolio-title">
+            <div class="portfolio-header">
+                <h1 id="portfolio-title" class="page-title">Portfolio</h1>
+                <div class="audio-controls">
+                    <button id="audio-toggle" class="audio-button" aria-pressed="false">
+                        <span class="audio-icon">🔇</span>
+                        <span class="audio-text">Enable Audio</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="swiper portfolio-slider" role="region" aria-label="Portfolio items">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" role="group" aria-label="1 of 6">
+                        <div class="slide-content">
+                            <img src="assets/placeholder-2.webp" alt="VFX composition showing particle systems and fluid dynamics" loading="lazy" class="slide-image">
+                            <div class="slide-info">
+                                <h3 class="slide-title">Particle Dynamics</h3>
+                                <p class="slide-description">Real-time particle systems with fluid simulation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" role="group" aria-label="2 of 6">
+                        <div class="slide-content">
+                            <div class="video-container">
+                                <video class="slide-video" muted loop preload="none" poster="assets/placeholder-3.webp" aria-label="Motion graphics animation demo">
+                                    <source data-src="assets/video-1.webm" type="video/webm">
+                                    <source data-src="assets/video-1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="video-controls" aria-hidden="true">
+                                    <button class="video-play-pause" aria-label="Play/Pause video">
+                                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="white" style="display: none;">
+                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                                        </svg>
+                                    </button>
+                                    <button class="video-mute" aria-label="Mute/Unmute video">
+                                        <svg class="unmute-icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+                                        </svg>
+                                        <svg class="mute-icon" width="24" height="24" viewBox="0 0 24 24" fill="white" style="display: none;">
+                                            <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slide-info">
+                                <h3 class="slide-title">Motion Graphics</h3>
+                                <p class="slide-description">After Effects composition with dynamic typography</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" role="group" aria-label="3 of 6">
+                        <div class="slide-content">
+                            <img src="assets/placeholder-4.webp" alt="Houdini procedural geometry with complex node networks" loading="lazy" class="slide-image">
+                            <div class="slide-info">
+                                <h3 class="slide-title">Procedural Geometry</h3>
+                                <p class="slide-description">Houdini-based procedural modeling and texturing</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" role="group" aria-label="4 of 6">
+                        <div class="slide-content">
+                            <div class="video-container">
+                                <video class="slide-video" muted loop preload="none" poster="assets/placeholder-2.webp" aria-label="Real-time rendering demonstration">
+                                    <source data-src="assets/video-2.webm" type="video/webm">
+                                    <source data-src="assets/video-2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="video-controls" aria-hidden="true">
+                                    <button class="video-play-pause" aria-label="Play/Pause video">
+                                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="white" style="display: none;">
+                                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                                        </svg>
+                                    </button>
+                                    <button class="video-mute" aria-label="Mute/Unmute video">
+                                        <svg class="unmute-icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+                                        </svg>
+                                        <svg class="mute-icon" width="24" height="24" viewBox="0 0 24 24" fill="white" style="display: none;">
+                                            <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slide-info">
+                                <h3 class="slide-title">Real-time Rendering</h3>
+                                <p class="slide-description">Unreal Engine viewport with dynamic lighting</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" role="group" aria-label="5 of 6">
+                        <div class="slide-content">
+                            <img src="assets/placeholder-3.webp" alt="Color correction and grading workflow" loading="lazy" class="slide-image">
+                            <div class="slide-info">
+                                <h3 class="slide-title">Color Grading</h3>
+                                <p class="slide-description">Nuke-based compositing with advanced color workflows</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" role="group" aria-label="6 of 6">
+                        <div class="slide-content">
+                            <img src="assets/placeholder-4.webp" alt="Mixed media composition combining live action and CG" loading="lazy" class="slide-image">
+                            <div class="slide-info">
+                                <h3 class="slide-title">Mixed Media</h3>
+                                <p class="slide-description">Hybrid composition blending practical and digital elements</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination" role="tablist" aria-label="Portfolio navigation"></div>
+                <div class="swiper-button-next" role="button" aria-label="Next slide" tabindex="0"></div>
+                <div class="swiper-button-prev" role="button" aria-label="Previous slide" tabindex="0"></div>
+            </div>
+
+            <noscript>
+                <div class="portfolio-fallback">
+                    <h2>Portfolio Gallery</h2>
+                    <div class="fallback-grid">
+                        <div class="fallback-item">
+                            <img src="assets/placeholder-2.webp" alt="VFX composition showing particle systems and fluid dynamics">
+                            <h3>Particle Dynamics</h3>
+                        </div>
+                        <div class="fallback-item">
+                            <img src="assets/placeholder-3.webp" alt="Motion graphics animation demo">
+                            <h3>Motion Graphics</h3>
+                        </div>
+                        <div class="fallback-item">
+                            <img src="assets/placeholder-4.webp" alt="Houdini procedural geometry">
+                            <h3>Procedural Geometry</h3>
+                        </div>
+                    </div>
+                </div>
+            </noscript>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2025 Sinusync. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
