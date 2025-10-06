@@ -1,129 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinusync - VFX & Real-time Visual Storytelling</title>
-    <meta name="description" content="Experimental VFX and real-time visual storytelling by Sinusync. Expert in Houdini, Nuke, Unreal Engine, and After Effects.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preload" href="assets/placeholder-1.webp" as="image">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sinusync - VFX & Real-time Visual Storytelling</title>
+  <meta
+    name="description"
+    content="Experimental VFX and real-time visual storytelling by Sinusync. Expert in Houdini, Nuke, Unreal Engine, and After Effects."
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preload" href="assets/placeholder-1.webp" as="image" />
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    defer
+  ></script>
+  <script src="js/main.js" defer></script>
 </head>
+
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
-    
-    <header class="header" role="banner">
-        <div class="header-container">
-            <div class="logo">
-                <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sinusync Logo">
-                    <title>Sinusync</title>
-                    <path d="M8 4C8 2.89543 8.89543 2 10 2H14C15.1046 2 16 2.89543 16 4V28C16 29.1046 15.1046 30 14 30H10C8.89543 30 8 29.1046 8 28V4Z" fill="white"/>
-                    <path d="M20 8C20 6.89543 20.8954 6 22 6H26C27.1046 6 28 6.89543 28 8V24C28 25.1046 27.1046 26 26 26H22C20.8954 26 20 25.1046 20 24V8Z" fill="white"/>
-                    <text x="36" y="20" font-family="Georgia, serif" font-size="16" fill="white">Sinusync</text>
-                </svg>
-            </div>
-            <nav class="nav" role="navigation" aria-label="Main navigation">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-                    <li><a href="links.html" class="nav-link">Links</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                </ul>
-            </nav>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header-container">
+      <div class="logo">
+        <svg
+          width="120"
+          height="32"
+          viewBox="0 0 120 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Sinusync Logo"
+        >
+          <title>Sinusync</title>
+          <path
+            d="M8 4C8 2.89543 8.89543 2 10 2H14C15.1046 2 16 2.89543 16 4V28C16 29.1046 15.1046 30 14 30H10C8.89543 30 8 29.1046 8 28V4Z"
+            fill="white"
+          />
+          <path
+            d="M20 8C20 6.89543 20.8954 6 22 6H26C27.1046 6 28 6.89543 28 8V24C28 25.1046 27.1046 26 26 26H22C20.8954 26 20 25.1046 20 24V8Z"
+            fill="white"
+          />
+          <text
+            x="36"
+            y="20"
+            font-family="Georgia, serif"
+            font-size="16"
+            fill="white"
+          >
+            Sinusync
+          </text>
+        </svg>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link active" aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li><a href="links.html" class="nav-link">Links</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main" class="main" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-background">
+        <img
+          src="assets/placeholder-1.webp"
+          alt=""
+          class="blueprint-image"
+          aria-hidden="true"
+          loading="eager"
+        />
+      </div>
+
+      <div class="hero-content">
+        <h6 id="hero-title" class="hero-title">
+          Hi, I'm Shushant, a passionate VFX Artist specializing in cinematic CGI
+        </h6>
+        <p class="hero-subtitle">
+          I work with top industry tools such as:<br /><br />
+          • Houdini for simulations<br />
+          • Unreal Engine for real-time rendering and texturing<br />
+          • Nuke for compositing<br />
+          • After Effects for additional post-production work.<br /><br />
+          My goal is to master these tools and handle the entire post-production
+          process independently, bringing my creative visions to life through
+          high-quality short films.
+        </p>
+
+        <!-- Software Logos -->
+        <div class="software-logos" role="img" aria-label="Software expertise">
+          <!-- Houdini -->
+          <div
+            class="logo-item"
+            tabindex="0"
+            role="img"
+            aria-label="Houdini"
+          >
+            <img
+              src="assets/images-removebg-preview.png"
+              alt="Houdini logo"
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Nuke -->
+          <div
+            class="logo-item"
+            tabindex="0"
+            role="img"
+            aria-label="Nuke"
+          >
+            <img
+              src="assets/images__1_-removebg-preview (2).png"
+              alt="Nuke logo"
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Unreal Engine -->
+          <div
+            class="logo-item"
+            tabindex="0"
+            role="img"
+            aria-label="Unreal Engine"
+          >
+            <img
+              src="assets/Unreal_Engine_Logo.svg"
+              alt="Unreal Engine logo"
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- After Effects -->
+          <div
+            class="logo-item"
+            tabindex="0"
+            role="img"
+            aria-label="After Effects"
+          >
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>After Effects</title>
+              <rect
+                x="6"
+                y="6"
+                width="36"
+                height="36"
+                rx="6"
+                stroke="white"
+                stroke-width="2"
+              />
+              <text
+                x="24"
+                y="30"
+                font-family="Arial, sans-serif"
+                font-size="16"
+                text-anchor="middle"
+                fill="white"
+              >
+                Ae
+              </text>
+            </svg>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main id="main" class="main" role="main">
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="hero-background">
-                <img src="assets/placeholder-1.webp" alt="" class="blueprint-image" aria-hidden="true" loading="eager">
-            </div>
-            <div class="hero-content">
-                <h6 id="hero-title" class="hero-title">Hi, I'm Shushant, a passionate VFX Artist specializing in cinematic CGI</h6>
-                <p class="hero-subtitle">
-                    I work with top industry tools such as<br><br>
-                    • Houdini for simulations<br>
-                    • Unreal Engine for real-time rendering and texturing<br>
-                    • Nuke for compositing<br>
-                    • After Effects for additional post-production work.<br><br>
-                    My goal is to master these tools and handle the entire post-production process independently, bringing my creative visions to life through high-quality short films.
-                </p>
-                
-                <div class="software-logos" role="img" aria-label="Software expertise">
+    <!-- Preview Cards -->
+    <section class="preview-cards" aria-labelledby="preview-title">
+      <h2 id="preview-title" class="section-title">Latest Work</h2>
 
-                    <!-- Houdini -->
-                    <div class="logo-item" tabindex="0" role="img" aria-label="Houdini">
-                        <img src="assets/images-removebg-preview.png" alt="Houdini logo" width="48" height="48" loading="lazy">
-                    </div>
+      <div class="cards-container">
+        <!-- Experimental VFX -->
+        <article class="card card-1" tabindex="0">
+          <div class="card-image">
+            <video
+              class="slide-video"
+              src="assets/train.mp4"
+              controls
+              muted
+              loop
+              playsinline
+            ></video>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Experimental VFX</h3>
+            <p class="card-meta">Blender & Unreal Engine</p>
+          </div>
+        </article>
 
-                    <!-- Nuke -->
-                    <div class="logo-item" tabindex="0" role="img" aria-label="Nuke">
-                        <img src="assets/images__1_-removebg-preview (2).png" alt="Nuke logo" width="48" height="48" loading="lazy">
-                    </div>
+        <!-- Motion Graphics -->
+        <article class="card card-2" tabindex="0">
+          <div class="card-image">
+            <video
+              class="slide-video"
+              src="assets/motions2.mp4"
+              controls
+              muted
+              loop
+              playsinline
+            ></video>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Motion Graphics</h3>
+            <p class="card-meta">After Effects</p>
+          </div>
+        </article>
 
-                    <!-- Unreal Engine -->
-                    <div class="logo-item" tabindex="0" role="img" aria-label="Unreal Engine">
-                        <img src="assets/Unreal_Engine_Logo.svg" alt="Unreal Engine logo" width="48" height="48" loading="lazy">
-                    </div>
+        <!-- 3D Environment -->
+        <article class="card card-3" tabindex="0">
+          <div class="card-image">
+            <video
+              class="slide-video"
+              src="assets/nature.mp4"
+              controls
+              muted
+              loop
+              playsinline
+            ></video>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">3D Environment</h3>
+            <p class="card-meta">Unreal Engine</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
-                    <!-- After Effects -->
-                    <div class="logo-item" tabindex="0" role="img" aria-label="After Effects">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <title>After Effects</title>
-                            <rect x="6" y="6" width="36" height="36" rx="6" stroke="white" stroke-width="2"/>
-                            <text x="24" y="30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">Ae</text>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="preview-cards" aria-labelledby="preview-title">
-            <h2 id="preview-title" class="section-title">Latest Work</h2>
-            <div class="cards-container">
-
-                <!-- Experimental VFX -->
-                <article class="card card-1" tabindex="0">
-                    <div class="card-image">
-                        <video class="slide-video" src="assets/train.mp4" controls muted loop playsinline></video>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Experimental VFX</h3>
-                        <p class="card-meta">Blender & Unreal Engine</p>
-                    </div>
-                </article>
-
-                <!-- Motion Graphics -->
-                <article class="card card-2" tabindex="0">
-                    <div class="card-image">
-                        <video class="slide-video" src="assets/motions2.mp4" controls muted loop playsinline></video>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Motion Graphics</h3>
-                        <p class="card-meta">After Effects</p>
-                    </div>
-                </article>
-
-                <!-- Procedural FX -->
-                <article class="card card-3" tabindex="0">
-                    <div class="card-image">
-                        <video class="slide-video" src="assets/nature.mp4" controls muted loop playsinline></video>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">3D Environment</h3>
-                        <p class="card-meta">Unreal Engine</p>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer" role="contentinfo">
-        <div class="footer-content">
-            <p>&copy; 2025 Sinusync. All rights reserved.</p>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p>&copy; 2025 Sinusync. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
