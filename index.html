@@ -16,18 +16,19 @@
   >
   </script>
 <style>
-.hero-text {
-  max-width: 800px;
-  margin: 80px auto;             /* centers horizontally and adds top/bottom space */
-  text-align: center;            /* centers all text lines */
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;             /* balanced size for readability */
-  line-height: 1.8;              /* comfortable spacing between lines */
-  color: #f0f0f0;                /* soft white for dark backgrounds */
+/* --- sizing ------------------------------------------------ */
+.hero-title {               /* already exists */
+  font-size: 2.2rem;        /* keep it big */
+  margin-bottom: 1.2rem;
 }
 
-.hero-text p {
-  margin-bottom: 20px;           /* small gap between paragraphs */
+.intro {                    /* NEW */
+  max-width: 800px;
+  margin: 0 auto;           /* centre the block */
+  text-align: center;
+  font-size: 1.05rem;       /* noticeably smaller than the h1 */
+  line-height: 1.7;
+  color: #f0f0f0;
 }
 
 
@@ -74,31 +75,32 @@
 
   <main id="main" class="main" role="main">
     <!-- Hero Section -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-background">
-        <img src="assets/placeholder-1.webp" alt="" class="blueprint-image" aria-hidden="true" loading="eager">
-      </div>
-      <div class="hero-content">
-        <h6 id="hero-title" class="hero-title">
-          Hi, I'm Shushant, a passionate VFX Artist specializing in cinematic CGI
-        </h6>
-<section class="hero-text">
-  <p>
-    I work with top industry tools such as<br>
-    • Houdini for simulations<br>
-    • Unreal Engine for real-time rendering and texturing<br>
-    • Nuke for compositing<br>
-    and After Effects for additional post-production work.
-  </p>
+<!-- HERO ------------------------------------------------->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-background">
+    <img src="assets/placeholder-1.webp" alt="" class="blueprint-image" loading="eager">
+  </div>
 
-  <p>
-    My goal is to master these tools and handle the entire post-production process independently, bringing my creative visions to life through high-quality short films.
-  </p>
+  <div class="hero-content">
+    <!-- big headline -->
+    <h1 id="hero-title" class="hero-title">
+      Hi, I'm Shushant, a passionate VFX Artist specializing in cinematic CGI
+    </h1>
+
+    <!-- smaller intro text -->
+    <p class="intro">
+      I work with top industry tools such as<br>
+      • Houdini for simulations<br>
+      • Unreal Engine for real-time rendering and texturing<br>
+      • Nuke for compositing<br>
+      and After Effects for additional post-production work.<br><br>
+
+      My goal is to master these tools and handle the entire
+      post-production process independently, bringing my creative
+      visions to life through high-quality short films.
+    </p>
+  </div>
 </section>
-
-
-      </div>
-    </section>
 
     <!-- Preview Cards -->
     <section class="preview-cards" aria-labelledby="preview-title">
