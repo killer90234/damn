@@ -177,7 +177,7 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  /* margin-top: 80px; */
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
