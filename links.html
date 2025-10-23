@@ -7,32 +7,100 @@
     <meta name="description" content="Connect with Sinusync on social media and professional platforms.">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
-    <style>
-        .social-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #111;
-    padding: 1rem;
-    border-radius: 12px;
-    text-decoration: none;
-    color: inherit;
-    transition: background 0.2s ease;
-}
+  <style>
+    /* ==== Background Video ==== */
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center;
+      z-index: -1;
+      filter: brightness(0.4) saturate(1.2);
+    }
 
-.social-link:hover {
-    background-color: #222;
-    cursor: pointer;
-}
+    /* ==== Page Layout ==== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: #000;
+      overflow-x: hidden;
+    }
 
-.copy-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-}
+    .links-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 6rem 1rem;
+      min-height: 100vh;
+      text-align: center;
+    }
 
-    </style>
+    .page-title {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .links-instruction {
+      font-size: 1rem;
+      opacity: 0.85;
+      margin-bottom: 2rem;
+    }
+
+    /* ==== Social Links ==== */
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 900px;
+    height: auto;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(17, 17, 17, 0.8);
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(8px);
+    }
+
+    .social-link:hover {
+      background: rgba(34, 34, 34, 0.85);
+      transform: translateY(-3px);
+      cursor: pointer;
+    }
+
+    .copy-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      color: white;
+      transition: transform 0.2s;
+    }
+
+    .copy-button:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.6);
+      font-size: 0.9rem;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
@@ -42,8 +110,7 @@
             <div class="logo">
                 <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sinusync Logo">
                     <title>Sinusync</title>
-                    <path d="M8 4C8 2.89543 8.89543 2 10 2H14C15.1046 2 16 2.89543 16 4V28C16 29.1046 15.1046 16 30 14 30H10C8.89543 30 8 29.1046 8 28V4Z" fill="white"/>
-                    <path d="M20 8C20 6.89543 20.8954 6 22 6H26C27.1046 6 28 6.89543 28 8V24C28 25.1046 27.1046 26 26 26H22C20.8954 26 20 25.1046 20 24V8Z" fill="white"/>
+                  
                     <text x="36" y="20" font-family="Georgia, serif" font-size="16" fill="white">Sinu</text>
                 </svg>
             </div>
@@ -59,6 +126,9 @@
 
     <main id="main" class="main" role="main">
         <section class="links-section" aria-labelledby="links-title">
+           <video class="background-video" autoplay muted loop playsinline>
+    <source src="assets/hatsune-miku-sunflower-serenade.3840x2160.mp4" type="video/mp4">
+  </video>
             <div class="links-container">
                 <h1 id="links-title" class="page-title">Links</h1>
                 <p class="links-instruction">Tap/click to open — hold to copy link</p>
